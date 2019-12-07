@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<title>Image Gallery</title>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<script src="lorem.js"></script>
+
+
+</head>
+<body>
+  <div class="header">
+    
+      <button class="image_upload" id="addimg" type="button">Upload Image</button>
+      <input class="dis_hid" type="file" id="imgload" name="image" accept="image/*">
+    
+  </div>
+<!-- <div class="header">
+ <center> <input type="file" id="imgload"/><button id="addimg">Add Image</button></center>
+</div> -->
+<div class="content">
+ <main class="cards">
+  <div class="imgcont">
+    <img src="http://lorempixel.com/400/200/fashion/1" width="250" height="250">
+    <div class="toggle-button">
+      <div class="inner-circle">
+            
+      </div>
+  </div>
+</div>
+<div class="imgcont">
+   <img src="http://lorempixel.com/400/200/technics/1" width="250" height="250">
+    <div class="toggle-button">
+      <div class="inner-circle">
+
+            
+      </div>
+  </div>
+</div>
+<div class="imgcont">
+    <img src="http://lorempixel.com/400/200/sports/8" width="250" height="250">
+    <div class="toggle-button">
+      <div class="inner-circle">
+            
+      </div>
+  </div>
+</div>
+<div class="imgcont">
+    <img src="http://lorempixel.com/400/200/fashion/3" width="250" height="250">
+    <div class="toggle-button">
+      <div class="inner-circle">
+            
+      </div>
+  </div>
+</div>
+<div class="imgcont">
+    <img src="http://lorempixel.com/400/200/fashion/4" width="250" height="250">
+    <div class="toggle-button">
+      <div class="inner-circle">
+
+      </div>
+  </div>
+</div>
+<div class="imgcont">
+    <img src="http://lorempixel.com/400/200/fashion/5" width="250" height="250">
+    <div class="toggle-button">
+      <div class="inner-circle">
+
+  
+      </div>
+  </div>
+</div>
+<div class="imgcont">
+    <img src="http://lorempixel.com/400/200/fashion/6" width="250" height="250">
+    <div class="toggle-button">
+      <div class="inner-circle">
+            
+      </div>
+  </div>
+</div>
+<div class="imgcont">
+    <img src="http://lorempixel.com/400/200/fashion/7" width="250" height="250">
+    <div class="toggle-button">
+      <div class="inner-circle">
+            
+      </div>
+  </div>
+</div>
+<div class="imgcont">
+    <img src="http://lorempixel.com/400/200/fashion/8" width="250" height="250">
+    <div class="toggle-button">
+      <div class="inner-circle">
+
+    
+      </div>
+  </div>
+</div>
+<div class="imgcont">
+    <img src="http://lorempixel.com/400/200/fashion/9" width="250" height="250">
+    <div class="toggle-button">
+      <div class="inner-circle">
+            
+      </div>
+  </div>
+</div>
+<div class="imgcont">
+    <img src="http://lorempixel.com/400/200/fashion/10" width="250" height="250">
+    <div class="toggle-button">
+      <div class="inner-circle">
+
+      </div>
+  </div>
+</div>
+<div class="imgcont">
+    <img src="http://lorempixel.com/400/200/technics/2" width="250" height="250">
+    <div class="toggle-button">
+      <div class="inner-circle">
+            
+      </div>
+  </div>
+</div>
+<div class="imgcont">
+    <img src="http://lorempixel.com/400/200/technics/3" width="250" height="250">
+    <div class="toggle-button">
+      <div class="inner-circle">
+
+            
+      </div>
+  </div>
+</div>
+<div class="imgcont">
+    <img src="http://lorempixel.com/400/200/sports/10" width="250" height="250">
+    <div class="toggle-button">
+      <div class="inner-circle">
+
+    
+            
+      </div>
+  </div>
+</div>
+<div class="imgcont">
+    <img src="http://lorempixel.com/400/200/sports/1" width="250" height="250">
+    <div class="toggle-button">
+      <div class="inner-circle">
+
+    
+            
+      </div>
+  </div>
+</div>
+<div class="imgcont">
+    <img src="http://lorempixel.com/400/200/sports/2" width="250" height="250">
+    <div class="toggle-button">
+      <div class="inner-circle">
+
+            
+      </div>
+  </div>
+</div>
+<div class="imgcont">
+    <img src="http://lorempixel.com/400/200/sports/3" width="250" height="250">
+    <div class="toggle-button">
+      <div class="inner-circle">
+            
+      </div>
+  </div>
+</div>
+<div class="imgcont">
+    <img src="http://lorempixel.com/400/200/sports/9" width="250" height="250">
+    <div class="toggle-button">
+      <div class="inner-circle">
+
+            
+      </div>
+  </div>
+</div>
+<div class="imgcont">
+    <img src="http://lorempixel.com/400/200/sports/5" width="250" height="250">
+    <div class="toggle-button">
+      <div class="inner-circle">
+            
+      </div>
+  </div>
+</div>
+<div class="imgcont">
+    <img src="http://lorempixel.com/400/200/sports/6" width="250" height="250">
+    <div class="toggle-button">
+      <div class="inner-circle">
+            
+      </div>
+  </div>
+</div>
+
+<img src="#" id="imgshow" width="250" height="250" hidden="hidden" /> 
+ 
+</main>
+</div> 
+
+<script>
+$('document').ready(function () {
+    $("#imgload").change(function () {
+        if (this.files && this.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                $('#imgshow').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(this.files[0]);
+
+            $('#imgshow').removeAttr("hidden");
+        }
+    });
+});
+
+</script>
+<div id="myModal" class="modal">
+
+    <!-- The Close Button -->
+    <span class="close" data-dismiss="modal" aria-hidden="true">&times;</span>
+
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content" src="" id="img01">
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
